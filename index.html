@@ -1,114 +1,149 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mikhail Sokolov | Senior DevOps & SRE</title>
+    <title>Mikhail Sokolov | DevOps & SRE Consulting</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap');
         body { font-family: 'Inter', sans-serif; }
     </style>
 </head>
-<body class="bg-gray-50 text-gray-800 antialiased">
+<body class="bg-gray-50 text-gray-800 antialiased selection:bg-gray-200">
 
-    <div class="max-w-4xl mx-auto p-8 my-10 bg-white shadow-xl rounded-lg">
-
-        <!-- Header Section -->
-        <header class="border-b pb-8 mb-8 flex flex-col md:flex-row justify-between items-center">
-            <div>
-                <h1 class="text-4xl font-bold text-gray-900">Mikhail Sokolov</h1>
-                <h2 class="text-xl text-blue-600 mt-2 font-semibold">Senior DevOps & Site Reliability Engineer</h2>
+    <!-- Navigation -->
+    <nav class="w-full bg-white border-b border-gray-200 fixed top-0 z-50">
+        <div class="max-w-5xl mx-auto px-6 py-4 flex flex-col sm:flex-row justify-between items-center gap-4">
+            <!-- Сleared anonymouz.org, added Name & Activity for Compliance -->
+            <div class="flex flex-col text-center sm:text-left">
+                <span class="font-semibold text-lg tracking-tight text-gray-900">Mikhail Sokolov</span>
+                <span class="text-xs text-gray-500 font-medium uppercase tracking-wider mt-0.5">IT Infrastructure Consulting & Services</span>
             </div>
-            <div class="mt-4 md:mt-0 text-sm text-gray-600 space-y-1 text-right">
-                <p>📧 <a href="mailto:sokolov.m.v@gmail.com" class="hover:text-blue-600">sokolov.m.v@gmail.com</a></p>
-                <p>🔗 <a href="https://www.linkedin.com/in/mihail-sokolov-2a029533/" class="hover:text-blue-600">LinkedIn</a> | <a href="https://github.com/anonymouzz" class="hover:text-blue-600">GitHub</a></p>
-                <p>📍 Available for Remote / Global</p>
-            </div>
-        </header>
 
-        <!-- Summary -->
-        <section class="mb-10">
-            <h3 class="text-2xl font-bold text-gray-800 mb-4">Profile</h3>
-            <p class="text-gray-700 leading-relaxed">
-                Senior DevOps and SRE professional with over 14 years of experience in designing, implementing, and maintaining high-load production infrastructure. Passionate about Infrastructure as Code (IaC), CI/CD automation, and ensuring maximum reliability and scalability. Proven track record of optimizing systems and building custom automation tools.
+            <div class="flex gap-6 text-sm font-medium text-gray-600">
+                <a href="https://github.com/anonymouzz" target="_blank" class="hover:text-gray-900 transition-colors">GitHub</a>
+                <a href="https://www.linkedin.com/in/mihail-sokolov-2a029533/" target="_blank" class="hover:text-gray-900 transition-colors">LinkedIn</a>
+                <a href="mailto:sokolov.m.v@gmail.com" class="hover:text-gray-900 transition-colors">sokolov.m.v@gmail.com</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="pt-32 pb-16 px-6">
+        <div class="max-w-3xl mx-auto">
+            <h1 class="text-3xl sm:text-4xl font-semibold text-gray-900 leading-tight mb-4">
+                Cloud Infrastructure & SRE Consulting
+            </h1>
+            <p class="text-lg text-gray-600 mb-8 leading-relaxed">
+                Independent B2B services. I design, automate, and maintain infrastructure for engineering teams. 14+ years of experience in DevOps and Site Reliability Engineering.
             </p>
-        </section>
+        </div>
+    </header>
 
-        <!-- Technical Skills -->
-        <section class="mb-10">
-            <h3 class="text-2xl font-bold text-gray-800 mb-4">Core Competencies & Stack</h3>
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 text-gray-700">
+    <!-- Expertise & Services -->
+    <section class="py-12 bg-white px-6 border-y border-gray-200">
+        <div class="max-w-5xl mx-auto">
+            <h2 class="text-xl font-semibold text-gray-900 mb-8">Areas of Expertise</h2>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Service 1 -->
                 <div>
-                    <h4 class="font-semibold text-gray-900 border-b pb-1 mb-2">Infrastructure & Containers</h4>
-                    <ul class="list-disc list-inside space-y-1 text-sm">
-                        <li>Kubernetes (K3s) & Docker</li>
-                        <li>Terraform & Ansible</li>
-                        <li>Linux Administration (Ubuntu, Debian)</li>
-                        <li>Packer</li>
+                    <h3 class="text-base font-semibold text-gray-900 mb-2 border-b pb-2">CI/CD & Automation</h3>
+                    <p class="text-gray-600 mb-3 text-sm leading-relaxed">
+                        Building delivery pipelines and custom automation tools to optimize compute costs and deployment times.
+                    </p>
+                    <ul class="text-sm text-gray-500 space-y-1">
+                        <li>• GitHub Actions & Gitea</li>
+                        <li>• Custom Provider Development (Python)</li>
+                        <li>• Spot Instance Management (GARM)</li>
                     </ul>
                 </div>
+
+                <!-- Service 2 -->
                 <div>
-                    <h4 class="font-semibold text-gray-900 border-b pb-1 mb-2">CI/CD & Automation</h4>
-                    <ul class="list-disc list-inside space-y-1 text-sm">
-                        <li>GitHub Actions & Gitea</li>
-                        <li>Custom Provider Development (Python)</li>
-                        <li>Automated Spot Instance Management</li>
-                        <li>Pipeline Optimization</li>
+                    <h3 class="text-base font-semibold text-gray-900 mb-2 border-b pb-2">Infrastructure as Code</h3>
+                    <p class="text-gray-600 mb-3 text-sm leading-relaxed">
+                        Managing infrastructure using code for predictability, version control, and scalability.
+                    </p>
+                    <ul class="text-sm text-gray-500 space-y-1">
+                        <li>• Terraform & Ansible</li>
+                        <li>• Packer Image Builds</li>
+                        <li>• Kubernetes (K3s) & Docker</li>
                     </ul>
                 </div>
+
+                <!-- Service 3 -->
                 <div>
-                    <h4 class="font-semibold text-gray-900 border-b pb-1 mb-2">Databases & High Availability</h4>
-                    <ul class="list-disc list-inside space-y-1 text-sm">
-                        <li>PostgreSQL (Patroni, pgBouncer)</li>
-                        <li>eRPC Gateways</li>
-                        <li>High-Load Systems Architecture</li>
+                    <h3 class="text-base font-semibold text-gray-900 mb-2 border-b pb-2">High Availability & SRE</h3>
+                    <p class="text-gray-600 mb-3 text-sm leading-relaxed">
+                        Maintaining database clusters and Linux systems to ensure stable production environments.
+                    </p>
+                    <ul class="text-sm text-gray-500 space-y-1">
+                        <li>• PostgreSQL (Patroni, pgBouncer)</li>
+                        <li>• High-Load Architecture</li>
+                        <li>• Linux Administration (Ubuntu, Debian)</li>
                     </ul>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <!-- Experience -->
-        <section class="mb-10">
-            <h3 class="text-2xl font-bold text-gray-800 mb-4">Selected Engineering Projects & Experience</h3>
+    <!-- Clients & Experience -->
+    <section class="py-16 bg-gray-50 px-6">
+        <div class="max-w-5xl mx-auto">
+            <h2 class="text-xl font-semibold text-gray-900 mb-8">Experience & Clients</h2>
 
-            <div class="mb-6">
-                <div class="flex justify-between items-baseline mb-2">
-                    <h4 class="text-lg font-bold text-gray-900">Custom GARM External Provider</h4>
+            <div class="space-y-4">
+                <!-- Current -->
+                <div class="flex flex-col sm:flex-row justify-between sm:items-center p-5 bg-white border border-gray-200 rounded">
+                    <div>
+                        <h4 class="text-lg font-medium text-gray-900">Yolwise</h4>
+                        <p class="text-gray-500 text-sm mt-1">Current Client &bull; Independent Consultant</p>
+                    </div>
                 </div>
-                <p class="text-gray-700 text-sm mb-2">
-                    Architected and developed a custom GitHub Actions Runner Manager (GARM) external provider in Python to automate the deployment and scaling of spot instance runners on cloud infrastructure, significantly optimizing CI/CD computing costs.
-                </p>
-            </div>
 
-            <div class="mb-6">
-                <div class="flex justify-between items-baseline mb-2">
-                    <h4 class="text-lg font-bold text-gray-900">RPC Gateway Architecture</h4>
+                <!-- Past -->
+                <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+                    <div class="p-5 bg-white border border-gray-200 rounded">
+                        <h4 class="text-base font-medium text-gray-900">T-Bank</h4>
+                        <p class="text-gray-500 text-sm mt-1">Previous Experience</p>
+                    </div>
+                    <div class="p-5 bg-white border border-gray-200 rounded">
+                        <h4 class="text-base font-medium text-gray-900">Dinect</h4>
+                        <p class="text-gray-500 text-sm mt-1">Previous Experience</p>
+                    </div>
+                    <div class="p-5 bg-white border border-gray-200 rounded">
+                        <h4 class="text-base font-medium text-gray-900">Joys</h4>
+                        <p class="text-gray-500 text-sm mt-1">Previous Experience</p>
+                    </div>
                 </div>
-                <p class="text-gray-700 text-sm mb-2">
-                    Designed and deployed a highly available RPC Gateway project utilizing eRPC, clustered PostgreSQL with Patroni, and pgBouncer to ensure robust connection pooling and state management.
-                </p>
             </div>
+        </div>
+    </section>
 
-            <div class="mb-6">
-                <div class="flex justify-between items-baseline mb-2">
-                    <h4 class="text-lg font-bold text-gray-900">Senior DevOps / SRE</h4>
-                    <span class="text-sm text-gray-500 font-medium">Yollwise | 2026 - Present</span>
-                </div>
-                <ul class="list-disc list-inside text-gray-700 text-sm space-y-1">
-                    <li>Maintained and scaled production environments utilizing Terraform, Ansible, and Kubernetes.</li>
-                    <li>Developed and maintained complex CI/CD pipelines across Gitea and GitHub.</li>
-                    <li>Managed Linux-based environments ensuring maximum uptime and security.</li>
-                </ul>
+    <!-- Contact -->
+    <section class="py-16 bg-white border-t border-gray-200 px-6">
+        <div class="max-w-3xl mx-auto">
+            <h2 class="text-xl font-semibold text-gray-900 mb-4">Contact Details</h2>
+            <p class="text-gray-600 mb-6 text-base">
+                Available for remote B2B contracts.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4">
+                <a href="mailto:sokolov.m.v@gmail.com" class="bg-gray-900 hover:bg-gray-800 text-white px-6 py-2.5 rounded font-medium text-sm transition-colors text-center">
+                    sokolov.m.v@gmail.com
+                </a>
+                <a href="https://www.linkedin.com/in/mihail-sokolov-2a029533/" target="_blank" class="border border-gray-300 hover:bg-gray-50 text-gray-900 px-6 py-2.5 rounded font-medium text-sm transition-colors text-center">
+                    LinkedIn Profile
+                </a>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <!-- Footer -->
-        <footer class="text-center text-gray-500 text-sm mt-10 border-t pt-6">
-            <p>&copy; <script>document.write(new Date().getFullYear())</script> Mikhail Sokolov. Hosted securely on <a href="https://cv.anonymouz.org" class="text-blue-500 hover:underline">cv.anonymouz.org</a></p>
-        </footer>
-
-    </div>
+    <!-- Footer -->
+    <footer class="bg-gray-50 py-8 text-gray-400 text-xs text-center border-t border-gray-200">
+        <p>&copy; <script>document.write(new Date().getFullYear())</script> Mikhail Sokolov. IT Infrastructure Consulting.</p>
+    </footer>
 
 </body>
 </html>
